@@ -3,7 +3,7 @@ import secrets from './core/secrets';
 import server from './server';
 
 async function main() {
-  await server.listen({ port: secrets.PORT, host: secrets.HOST });
+  server.listen({ port: secrets.PORT, host: secrets.HOST });
   logger.info(`Running at http://${secrets.HOST}:${secrets.PORT}`);
 }
 
